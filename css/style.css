@@ -1,0 +1,139 @@
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* deslizar suavemente */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e293b;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: #f8fafc;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+/* Seções */
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* Início */
+#inicio {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#inicio h1 {
+    font-size: 48px;
+    color: #a78bfa;
+}
+
+#inicio h2 {
+    font-size: 28px;
+}
+
+/* Habilidades */
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.habilidades-container span {
+    background-color: #1e293b;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1e293b;
+}
+
+/* @media = responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #inicio h1 {
+        font-size: 32px;
+    }
+}
+
+#lista-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card-projeto {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.card-projeto h3 {
+    color: #a78bfa;
+    margin-bottom: 10px;
+}
+
+.card-projeto p {
+    margin-bottom: 15px;
+}
+
+.card-projeto a {
+    color: #a78bfa;
+    text-decoration: none;
+}
+
+.card-projeto:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
