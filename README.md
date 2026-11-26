@@ -53,7 +53,3 @@ Não é necessário instalar dependências.
 Desenvolvido por Maria Eduarda — estudante de Engenharia de Software e apaixonada por tecnologia.
 
 [Meu GitHub](https://github.com/madudevv)
-
-## Prévia do projeto
-
-![Prévia do portfólio](../img/preview.png)
