@@ -10,12 +10,13 @@ async function carregarProjetos() {
 
     listaProjetos.innerHTML = "";
 
-    console.log(projetos);
+    console.log(projetos); /* para verificar se os projetos estão sendo carregados corretamente */
 
     projetos.forEach((projeto) => {
       
       const card = document.createElement("div");
       card.classList.add("card-projeto");
+      
       const titulo = document.createElement("h3");
       const descricao = document.createElement("p");
       const link = document.createElement("a");
